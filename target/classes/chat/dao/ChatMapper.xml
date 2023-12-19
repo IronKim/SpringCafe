@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="chatSQL">
+	 <select id="reload" parameterType="String" resultType="chat.bean.ChatDTO">
+	 	select seq,name,userSeq,content,date_format(logtime, '%m.%d %H:%i:%s') as logtime
+	 	from chat where seq > #{seq} order by logtime desc limit 20
+	 </select>
+	 <insert id="send" parameterType="chat.bean.ChatDTO">
+	 	insert into chat (name,userSeq,content,logtime) values (#{name},#{userSeq},#{content},now()); 
+	 </insert>
+ </mapper>

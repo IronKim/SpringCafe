@@ -1,0 +1,62 @@
+@charset "UTF-8";
+table {
+	border-collapse: collapse;
+	border: solid lightgray;
+	margin: auto; 
+	margin-top: 20%;
+	margin-bottom: 10%;
+	width:500px;
+	height: 250px;
+}
+#memberWriteForm{
+	width:940px;
+	margin: auto; 
+}
+#memberWriteForm table{
+	margin-top: 50px;
+}
+h3{
+	color: #265B3D;
+	padding-left: 200px;
+	margin-top: 100px;
+	font-size: 30px;
+} 
+th, td {
+    padding: 15px; 10px;
+}
+
+#id, #pwd, #name, #repwd, #user_email, #email_address,
+#phoneNumber1, #phoneNumber2, #phoneNumber3,
+#address{
+	height: 25px;
+	padding: 6px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 200px;
+	font-size: 14px;
+	cursor: text; /* 입력란 클릭 가능하도록 설정 */
+}
+#user_email_address{
+	height: 25px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: 140px;
+	font-size: 14px;
+	cursor: text; /* 입력란 클릭 가능하도록 설정 */
+}
+.btn{
+	font-weight: bold;
+	margin: 0 4px;
+	cursor: pointer;
+	text-decoration: none;
+	color:#265B3D;
+	border: 1.5px solid #265B3D;
+	padding: 7px 30px;
+	border-radius: 5px;
+	background-color: white;
+	transition: 0.5s;
+}
+.btn:hover{
+	background-color: #265B3D;
+	color: white;
+}

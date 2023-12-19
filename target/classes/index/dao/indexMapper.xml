@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="indexSQL">
+	<select id="menuList" resultType="menu.bean.MenuDTO">
+ 		select * from menu
+ 	</select>
+	<select id="boardList" resultType="board.bean.BoardDTO">
+ 		select * from board where id=100 order by logtime desc limit 5;
+ 	</select>
+	<select id="noticeList" resultType="board.bean.BoardDTO">
+ 		select * from board where id=200 order by logtime desc limit 5;
+ 	</select>
+ </mapper>

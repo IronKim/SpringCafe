@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<context:component-scan base-package="member.bean" />
+	<context:component-scan base-package="member.service" />
+	<context:component-scan base-package="member.dao" />
+	
+	
+	<context:component-scan base-package="board.bean" />
+	<context:component-scan base-package="board.service" />
+	<context:component-scan base-package="board.dao" />
+	
+	
+	<context:component-scan base-package="menu.bean" />
+	<context:component-scan base-package="menu.service" />
+	<context:component-scan base-package="menu.dao" />
+	
+	<context:component-scan base-package="store.service" />
+	<context:component-scan base-package="store.dao" />
+	<context:component-scan base-package="store.bean" />
+	
+	<!-- admin페이지 -->
+	<context:component-scan base-package="admin.service" />
+	<context:component-scan base-package="admin.dao" />
+	
+	<!-- order페이지 -->
+	<context:component-scan base-package="order.service" />
+	<context:component-scan base-package="order.dao" />
+	
+
+	<!-- membership페이지 -->
+	<context:component-scan base-package="membership.service" />
+	<context:component-scan base-package="membership.dao" />
+
+	<context:component-scan base-package="index.service" />
+	<context:component-scan base-package="index.dao" />
+	
+	<context:component-scan base-package="chat.service" />
+	<context:component-scan base-package="chat.dao" />
+
+	
+	<context:component-scan base-package="kakao.api" />
+	
+	<context:component-scan base-package="spring.conf" />
+	
+	
+   	<context:component-scan base-package="auth.service" />
+   	
+   	<!-- 이메일 인증 관련 빈 등록 -->
+   	
+   	<context:property-placeholder location="classpath:spring/email.properties" />
+   	<bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+       <property name="host" value="smtp.gmail.com" />
+	   <property name="port" value="587" />
+	   <property name="username" value="${email.account}" />
+	   <property name="password" value="${email.password}" />
+	   <property name="javaMailProperties">
+	   	 <props>
+	        <prop key="mail.smtp.starttls.enable">true</prop>
+			<prop key="mail.smtp.auth">true	</prop>
+			<prop key="mail.transport.protocol">smtp</prop>
+			<prop key="mail.debug">false</prop>
+			<prop key="mail.smtp.ssl.trust">smtp.gmail.com</prop>
+			<prop key="mail.smtp.ssl.protocols">TLSv1.2</prop>
+	      </props>
+	    </property>
+   	</bean>
+
+</beans>

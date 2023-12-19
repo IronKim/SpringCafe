@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="memberSQL">
+ 	<!-- <insert id="write" parameterType="member">
+       insert into member values(#{seq},#{name},#{id},#{pwd},#{email+"@"+},#{phoneNumber},#{address},#{point})
+    </insert> -->
+    <insert id="write" parameterType="member">
+       insert into member values(#{seq},#{id},#{pwd},#{name},#{email},#{phoneNumber},#{address},#{point},#{pointUsed})
+    </insert>
+    
+	<select id="idCheck" resultType="int" parameterType="String">
+		SELECT COUNT(*) FROM MEMBER WHERE ID = #{Id}
+	</select>
+	
+	<select id="login" parameterType="java.util.Map" resultType="member">
+    	select * from member where id=#{id} and pwd=#{pwd}
+    </select>
+    
+    <select id="pwdCheck" resultType="String" parameterType="String">
+    	SELECT COUNT(*) FROM MEMBER WHERE pwd = #{pwd}
+    </select>
+    
+    <update id="update" parameterType="member">
+    	update member set name = #{name}, pwd = #{pwd}, email = #{email}, phoneNumber = #{phoneNumber}, address = #{address} where id = #{id}
+    </update>
+    
+    <delete id="delete" parameterType="String">
+    	delete from member where id = #{id}
+    </delete>
+    
+ </mapper>

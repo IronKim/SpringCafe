@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@keyframes ping{
+	0% {
+		transform: translateY(0);
+		opacity: 0.2;	
+	}	
+	20% {
+		transform: translateY(-1em);
+	}	
+	40% {
+		transform: translateY(0em);
+	}	
+	60% {
+		transform: translateY(-0.5em);
+	}	
+	80% {
+		transform: translateY(0em);
+	}	
+	100% {
+		opacity: 1;	
+	}	
+}
+@keyframes pingInfinite{
+	0% {
+		transform: translateY(0);
+	}	
+	50% {
+		transform: translateY(-0.8em);
+	}	
+	100% {
+		transform: translateY(0em);
+	}	
+}
+@keyframes item{
+    0% { 
+    	transform: translateY(-1em); 
+    	scale:0.9;
+    }
+    20% { transform: translateY(0); }
+    40% { transform: translateY(-0.5em); }
+    60% { transform: translateY(0); }
+    80% { transform: translateY(-0.1em); }
+    100% { transform: translateY(0); }
+}
+@keyframes itemRe {
+    0% { 
+    	transform: translateY(-0.15em); 
+    	scale:0.99;
+    }
+    25% { transform: translateY(0.15em); }
+    50% { 
+    	transform: translateY(-0.05em); 
+    	scale:1.01;
+    }
+    75% { transform: translateY(0.05em); }
+    100% { transform: translateY(0); }
+}
+@keyframes orderIn{
+	0% {
+		transform: translateX(0);	
+	}	
+	70% {
+		transform: translateX(-0.3em);
+	}	
+	100% {
+		transform: translateX(0em);
+	}
+}
+@keyframes rollleft {
+    100% {transform: perspective(100vw) rotateY(360deg) };
+}
+@keyframes rollright {
+    100% {transform: perspective(100vw) rotateY(-360deg) };
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes roll{
+    100% {transform: rotate(-360deg) };
+}
+@keyframes rollR{
+    100% {transform: rotate(360deg) };
+}
+@keyframes chatUp{
+     from {
+     	border-radius: 50%;
+     	scale:0;
+        opacity: 0.3;
+    }
+    to {
+    	border-radius: 22.5px;
+    	scale:1;
+        opacity: 0.95;
+    }
+}
+@keyframes chatDown{
+     from {
+     	border-radius: 22.5px;
+     	scale:1;
+        opacity: 0.95;
+    }
+    to {
+    	border-radius: 50%;
+    	scale:0;
+        opacity: 0.3;
+    }
+}

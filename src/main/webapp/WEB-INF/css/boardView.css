@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+#text {
+	resize: none;
+    flex: 1; /* <textarea>가 남은 공간을 모두 차지하도록 설정 */
+    margin-right: 10px; /* <textarea>와 <input> 사이의 간격 설정 */
+    width:350px;
+}
+
+#commentWriteBtn {
+    min-width: 50px; /* <input>의 최소 너비 설정 */
+}
+#textDiv{
+	color: red;
+}
+td {
+    word-break: break-all;
+    font-size: 13px;
+}
+th {
+    background-color: #f2f2f2; /* 머리글 색상 설정 */
+    font-weight: bold;
+    padding:5px;
+}
+
+table {
+	width: 470px;
+	margin: 0 auto;
+    border-collapse: collapse;
+    float:left;
+}
+
+#boardCommentDiv{
+	margin: 0px auto; 
+	width: 100%;
+	word-break:break-all;
+	height: 282px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+#boardCommentDiv::-webkit-scrollbar {
+   width:7px;
+}
+#boardCommentDiv::-webkit-scrollbar-track {
+    background-color: transparate;
+}
+#boardCommentDiv::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 7px;
+}
+#comment{
+	padding: 5px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+#commentForm {
+	height: 80px;
+	margin: 0px auto;
+	width: 100%;
+}
+main{
+	width: 940px;
+	margin: 0 auto;
+}
+#subject {
+    font-weight: bold;
+}
+
+#content {
+	height: 300px;
+    padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden; 
+}
+#content::-webkit-scrollbar {
+   width:7px;
+}
+#content:-webkit-scrollbar-track {
+    background-color: transparate;
+}
+#content::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 7px;
+}
+#commentSection {
+	width:467px;
+	margin: 0 auto;
+	float:right;
+	height: 393px;
+	border-left: 3px solid darkgray;
+	border-bottom: 1px solid gray;
+	overflow: hidden;
+}
+#a{
+	color: #fff;
+	background-color: #265B3D;
+	background-color: rgba(38, 91, 61, 0.7); 
+}
+.btnV {
+	float:right;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	color:#265B3D;
+	border: 1.5px solid #265B3D;
+	padding: 7px 30px;
+	border-radius: 5px;
+	background-color: white;
+	transition: 0.5s;
+	z-index: 100;
+	margin: 20px 8px;
+}
+.btnV:hover{
+	background-color: #265B3D;
+	color: white;
+}
+#commentWriteBtn {
+	color: #fff;
+	background-color: #265B3D;
+	background-color: rgba(38, 91, 61, 0.7); 
+	border: 1px solid black;
+	border-radius:2px;
+	padding: 19px;
+	vertical-align:top;
+	cursor: pointer;
+}
+#commentWriteBtn:hover {
+	text-decoration: underline;
+}
+.commentItem{
+	width:98%;
+	padding: 5px;
+	min-height:40px;
+	border-bottom: 1px solid lightgray;
+}
+.commentDeleteBtn{
+	margin-right: 2%;
+	font-size: 13px;
+	background-color: white;
+	border: 1px solid gray;
+	border-radius: 2px;
+	float: right;
+	transition: 0.5s;
+	cursor: pointer;
+	color: #265B3D;
+	font-weight: bold;
+}
+.commentDeleteBtn:hover {
+	background-color: #265B3D;
+	color: white;
+}
+.commentWriter{
+	font-size: 13px;
+	font-weight: bold;
+}
+.commentDate{
+	font-size: 13px;
+}
+#loading {
+	display:none;
+	position: absolute;
+	width:467px;
+	height:282px;
+	background-color: gray;
+	opacity: 0.6;
+}
+#loading img{
+	animation: roll 2s infinite;
+	margin: 126px 218.5px;
+}
+#commentLogin{
+	cursor: pointer;
+	width: 91.5%; 
+	background-color:#f9f9f9;
+	text-align:center;
+	padding: 25px;
+	border-bottom: 1px solid gray;
+	font-size: 22px;
+	font-weight: bold;
+}
+#commentInputContainer {
+    width: 96%; 
+    padding: 10px;
+    background-color:#f9f9f9;
+    border-bottom: 1px solid gray;
+}

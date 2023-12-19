@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+#membership li{
+	list-style: none;
+	font-size: 12px;
+}
+#membership{
+	width:940px;
+	height:500px;
+	margin:0 auto;
+}
+#memgrade{
+	width:940px;
+	height:200px;
+	margin:0 auto;
+	border-bottom: 3px solid #265B3D;
+}
+#membership_h{
+	width:940px;
+	margin:0 auto;
+}
+
+#membership div{
+	float: left;
+}
+.grade{
+	width: 720px;
+	height: 450px;
+	margin-top: 50px;
+}
+.grade li{
+	list-style: none;
+	font-size: 12px;
+}
+#diamond li{
+	list-style: none;
+	font-size: 12px;
+}
+.grade div{
+	width:200px;
+	height: 450px;
+	text-align: center;
+	margin-left: 30px;
+	float: left;
+}
+#benefit{
+	color: white;
+	line-height :45px;
+	font-weight: bold;
+}
+#crown{
+	width: 180px;
+	height: 180px;
+	top:20px;
+	position: relative;
+	z-index: 50;
+}
+#diamond{
+	width: 180px;
+	height: 430px;
+	position: absolute;
+	margin-left: 720px;
+	margin-top: 70px;
+	text-align: center;
+	background-color: #F7F7F7;
+}
+#gauge div{
+	float: left;
+}
+#gauge{
+	height: 150px;
+	margin-top: 75px;
+	background-color: #265B3D;
+	border-radius: 10px;
+}
+#grade{
+	width: 140px;
+	height: 140px;
+	text-align:center;
+	border-radius: 80px;
+	background-color: white;
+	margin-left: 5px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+#gradeimg{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+#idid{
+	width: 110px;
+	height: 150px;
+	color: whitesmoke;
+	text-align:center;
+}
+#grade p{
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#gradebarcase{
+	width:490px;
+	height: 130px;
+	margin-left: 100px;
+	margin-top: 10px;
+}
+#gradebar_p{
+	width:350px;
+	height: 30px;
+	margin-left: 90px;
+	margin-top: 20px;
+	text-align: center;
+}
+#gradebar_p span{
+	font-weight: bold;
+}
+#gradebar{
+	width:490px;
+	height: 3px;
+	 appearance: none;
+}
+#gradebar::-webkit-progress-bar {
+	  background: #f0f0f0;
+	  border-radius: 12px;
+	  height: 8px;
+	  overflow: hidden;
+}
+
+#gradebar::-webkit-progress-value {
+	  background: #c5a56c;
+	  border-radius: 0px;
+	  height: 8px;
+}
+#gradeT{
+	font-weight: bold;
+	margin-top: 0;
+}

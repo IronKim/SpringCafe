@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/* div{
+   border: 1px solid rgb(43, 43, 190);
+        } */
+.footer{
+	width: 100%;
+	height: 148px;
+	background-color: #413e3d;
+	margin-top: 5%;
+	position:relative;
+	} 
+.inner_footer{
+	width:940px;
+	height: 100px;
+	margin: auto;
+	margin-top: 10px;
+	
+}   
+.inner_footer div{
+	position: absolute;
+	float: left;
+	width:50px;
+	height: 50px;
+	top: 50px;
+	background-size: cover;
+	cursor:pointer; 
+}  
+.footer a{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+}
+.footer p{
+	color:white;
+	font-size: 10px;
+}  
+
+/* 상단 이동 화살표 */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px; /* 버튼의 수직 위치를 조절합니다. */
+  right: 20px; /* 버튼의 수평 위치를 조절합니다. */
+  background-color: #265B3D; /* 버튼의 배경색을 변경합니다. */
+  color: #fff; /* 버튼의 텍스트 색상을 변경합니다. */
+  border: none;
+  border-radius: 50%; /* 동그랗게 만듭니다. */
+  padding: 10px;
+  cursor: pointer;
+  font-size: 13px; /* 폰트 크기를 조절합니다. */
+  width: 45px; /* 버튼의 너비를 조절합니다. */
+  height: 45px; /* 버튼의 높이를 조절합니다. */
+  text-align: center;
+  line-height: 40px; /* 버튼 안의 텍스트를 중앙에 정렬합니다. */
+  z-index: 9900;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3; /* 버튼에 호버 효과를 추가하여 배경색을 변경합니다. */
+}
+/* 채팅 버튼 */
+#chatBtn {
+  position: fixed;
+  bottom: 20px; /* 버튼의 수직 위치를 조절합니다. */
+  right: 80px; /* 버튼의 수평 위치를 조절합니다. */
+  background-color: #265B3D; /* 버튼의 배경색을 변경합니다. */
+  color: #fff; /* 버튼의 텍스트 색상을 변경합니다. */
+  border: none;
+  border-radius: 50%; /* 동그랗게 만듭니다. */
+  padding: 5px;
+  cursor: pointer;
+  font-size: 12px; /* 폰트 크기를 조절합니다. */
+  font-weight: bold; 
+  width: 45px; /* 버튼의 너비를 조절합니다. */
+  height: 45px; /* 버튼의 높이를 조절합니다. */
+  text-align: center;
+  z-index: 9900;
+  animation: fadein 0.5s;
+}
+#chatBtn img{
+	width: 17px;
+}
+#chatBtn:hover {
+  background-color: #0056b3; /* 버튼에 호버 효과를 추가하여 배경색을 변경합니다. */
+}
+/* 채팅 */
+#chatWindow {
+  transform-origin: 100% 100%;
+  opacity: 0.95;
+  background-color: whitesmoke;
+  position: fixed;
+  bottom: 20px; /* 버튼의 수직 위치를 조절합니다. */
+  right: 80px; /* 버튼의 수평 위치를 조절합니다. */
+  border-radius: 22.5px; /* 동그랗게 만듭니다. */
+  padding: 5px;
+  width: 350px; 
+  height: 350px;
+  z-index: 9999;
+  display: none;
+  overflow: hidden;
+}
+
+#messageSectionM {
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 260px;
+}
+#messageSectionM::-webkit-scrollbar {
+   width:6px;
+   margin-bottom: 2px;
+}
+#messageSectionM::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 6px;
+    opacity : 0.5;
+    margin-bottom: 20px;
+}
+#messageSectionM::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 6px;
+}
+.areaM {
+	margin: 2px 5px;
+}
+.timeM {
+	font-size: 10px;
+	color: gray;
+	margin: 2px;
+}
+.contentM {
+	word-break:break-all;
+	max-width: 200px;
+	border: solid 1px black;
+	background: white;
+	border-radius:5px;
+	padding:0 4px 1px 4px;
+	max-height: 200px;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+.contentM::-webkit-scrollbar {
+   width:6px;
+}
+.contentM::-webkit-scrollbar-track {
+    background-color: transparate;
+}
+.contentM::-webkit-scrollbar-thumb {
+    background-color: #265B3D;
+    border-radius: 6px;
+}
+.nameM {
+	font-weight: bold;
+	font-size: 12px;
+	margin: 2px;
+}
+#contentM {
+	height: 54px;
+	font-size: 12px;
+	float: right;
+	width: 40%;
+	margin: 0 10px;
+	resize: none;
+}
+#contentM::-webkit-scrollbar {
+   width:7px;
+}
+#contentM::-webkit-scrollbar-track {
+    background-color: white;
+    opacity : 0.5;
+}
+#contentM::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 7px;
+}
+#resetM{
+	cursor: pointer;
+	background: none;
+	border: 0;
+}
+#resetM img{
+	animation: roll 3s infinite linear;
+	width: 30px;
+}
+#refreshSectionM {
+	padding: 5px;
+	float: left;
+}
+#reDivM {
+	margin-top: 7px;
+	font-weight: bold;
+	font-size: 10px;
+	color: green
+}
+#submitM{
+	font-size:12px;
+	float: right;
+	width: 12%;
+	margin: 0;
+	padding: 16.5px 5px;
+	cursor: pointer;
+	transition:0.5s;
+}
+#writeSectionM {
+	border-bottom: 2px solid lightgray;
+	padding: 5px;
+	height: 70px;
+}
+#topSectionM {
+	height: 20px;
+	padding: 0 7px;
+}
+#outChatM{
+	padding:0;
+	float: left;
+	background-color: whitesmoke;
+	border:0;
+}
+#outChatM img{
+	width: 15px;
+}
+#closeChatM{
+	padding:0;
+	float: right;
+	background-color: whitesmoke;
+	border:0;
+}
+#closeChatM img{
+	width: 15px;
+}

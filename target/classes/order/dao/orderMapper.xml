@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="orderSQL">
+ 	<select id="itemList" parameterType="String" resultType="menu.bean.MenuDTO">
+ 		select * from menu where id=#{id}
+ 	</select>
+ 	<insert id="payment" parameterType="order.bean.OrderDTO">
+ 		insert into payment (id,menuSeq,cnt,total,storeSeq,pointUsed) values (#{id},#{menuSeq},#{cnt},#{total},#{storeSeq},#{pointUsed});
+ 	</insert>
+ 	<select id="orderNum" resultType="Integer">
+	 	select seq from payment order by seq desc limit 1
+ 	</select>
+ 	<select id="selectPayment" parameterType="String" resultType="order.bean.OrderDTO">
+	 	select * from payment where seq = ${seq}
+ 	</select>
+ 	<select id="paymentList" parameterType="String" resultType="menu.bean.MenuDTO">
+ 		select * from menu where seq = ${seq}
+ 	</select>
+ 	<select id="storeList" parameterType="String" resultType="store.bean.StoreDTO">
+ 		select * from store where region=#{region}
+ 	</select>
+ 	<select id="storeSearch" parameterType="java.util.HashMap" resultType="store.bean.StoreDTO">
+ 		select * from store where name like '%${search}%' and region like '%${region}%'
+ 	</select>
+ 	<select id="storeName" parameterType="String" resultType="String">
+ 		select name from store where seq = ${seq} 
+ 	</select>
+ 	<update id="point" parameterType="java.util.HashMap">
+ 		update member set point = point + ${point},pointUsed = pointUsed + ${pointUsed} where id = #{id}
+ 	</update>
+ 	<select id="newSession" parameterType="String" resultType="member.bean.MemberDTO">
+ 		select * from member where id = #{id} 
+ 	</select>
+ 	<select id="payNum" resultType="String">
+ 		select seq from payment order by seq desc limit 1
+ 	</select>
+ </mapper>

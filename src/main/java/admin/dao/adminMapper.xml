@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+ "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="adminSQL">
+ <!-- 멤버 -->
+ 	<select id="memberList" resultType="member.bean.MemberDTO">
+ 		select * from member
+ 	</select>
+ 	<delete id="memberDelete" parameterType="String">
+ 		delete from member where seq = ${seq}
+ 	</delete>
+ 	<update id="point" parameterType="java.util.HashMap">
+ 		update member set point = point + ${point} where id = #{id}
+ 	</update>
+ 	<select id="memberSelect" parameterType="String" resultType="member.bean.MemberDTO">
+ 		select * from member where seq = ${seq}
+ 	</select>
+ <!-- 메뉴 -->
+ 	<insert id="menuAdd" parameterType="menu.bean.MenuDTO">
+ 		insert into menu (id,name,price,image,content)
+ 		values (#{id},#{name},#{price},#{image},#{content})
+ 	</insert>
+ 	<select id="menuList" resultType="menu.bean.MenuDTO">
+ 		select * from menu
+ 	</select>
+ 	<delete id="menuDelete" parameterType="String">
+ 		delete from menu where seq = ${seq}
+ 	</delete>
+ 	<select id="menuSelectOne" parameterType="String" resultType="menu.bean.MenuDTO">
+ 		select * from menu where seq = ${seq}
+ 	</select>
+ <!-- 매장 -->
+ 	<insert id="storeAdd" parameterType="store.bean.StoreDTO">
+ 		insert into store (name,region,address,tel)
+ 		values (#{name},#{region},#{address},#{tel})
+ 	</insert>
+ 	<select id="storeList" resultType="store.bean.StoreDTO">
+ 		select * from store
+ 	</select>
+ 	<delete id="storeDelete" parameterType="String">
+ 		delete from store where seq = ${seq}
+ 	</delete>
+ 	<select id="storeSelectOne" parameterType="String" resultType="store.bean.StoreDTO">
+ 		select * from store where seq = ${seq}
+ 	</select>
+ <!-- 주문내역 -->
+ 	<select id="payList" resultType="order.bean.OrderDTO">
+ 		select payment.seq,payment.id,payment.menuSeq,payment.cnt,payment.total,store.name as storeSeq,payment.pointUsed 
+ 		from payment
+ 		join store on payment.storeSeq = store.seq
+ 	</select>
+ 	<select id="myPayList" parameterType="String" resultType="order.bean.OrderDTO">
+ 		select payment.seq,payment.id,payment.menuSeq,payment.cnt,payment.total,store.name as storeSeq,payment.pointUsed 
+ 		from payment
+ 		join store on payment.storeSeq = store.seq
+ 		where payment.id = #{id}
+ 	</select>
+ </mapper>

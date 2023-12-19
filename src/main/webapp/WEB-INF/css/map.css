@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.mapContainer{
+	position: relative;
+}
+map{
+	display: inline-block;
+	cursor: pointer;
+	position:relative;
+	
+}
+/***********************/
+.storeContainer{
+	width:940px;
+	margin:0 auto;
+	margin-top: 10px;
+	}
+.mapContainer{
+	width: 430px;
+	margin:0 auto;
+	margin-top: 5%;
+}
+#regionTable tr{
+	border: solid 1px black;
+}
+#mapSelect{
+	font-size: 16px;
+	text-align: center;
+	width:70px;
+	height:32px;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	float: right;
+}
+#mapSelect option{
+	text-align: left;
+}
+#regionTable{
+	background-color: whitesmoke;
+}
+
+
+
+
+/*********************/
+.city_layer01{position:absolute;top:70px;left:150px;}
+.city_layer02{position:absolute;top:243px;left:260px;}
+.city_layer03{position:absolute;top:195px;left:238px;}
+.city_layer04{position:absolute;top:70px;left:130px;}
+.city_layer05{position:absolute;top:250px;left:135px;}
+.city_layer06{position:absolute;top:160px;left:167px;}
+.city_layer07{position:absolute;top:215px;left:285px;}
+.city_layer08{position:absolute;top:70px;left:230px;}
+.city_layer09{position:absolute;top:90px;left:160px;}
+.city_layer10{position:absolute;top:235px;left:220px;}
+.city_layer11{position:absolute;top:155px;left:250px;}
+.city_layer12{position:absolute;top:255px;left:165px;}
+.city_layer13{position:absolute;top:210px;left:150px;}
+.city_layer14{position:absolute;top:155px;left:140px;}
+.city_layer15{position:absolute;top:135px;left:185px;}
+.city_layer16{position:absolute;top:325px;left:130px;}
+
+#regionTable{
+	border-collapse: collapse;
+}
+
+#regionTable th,
+#regionTable td {
+	border: 1px black solid;
+	padding: 10px;
+}
+#regionTable th:first-child,
+#regionTable td:first-child {
+	border-left: 0;
+}
+#regionTable th:last-child,
+#regionTable td:last-child {
+	border-right: 0;
+}
+.ping {
+	animation: ping 0.7s linear forwards, pingInfinite 2s infinite;
+}

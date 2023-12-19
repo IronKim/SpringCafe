@@ -1,0 +1,126 @@
+@charset "UTF-8";
+main{
+	width:940px;
+	margin: 0 auto;
+	border: 0;
+	height: 720px
+}
+#storeName {
+	max-width: 45%;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	margin: 0 auto;
+	margin-top: 100px;
+	text-align: center;
+	font-size:30px;
+	font-weight: bold;
+}
+#paymentSection{
+	width:45%;
+	border: 1px solid grey;
+	margin: 20px auto;
+	text-align:center;
+	background-color: whitesmoke;
+}
+#paymentNumber{
+	width:50%;
+	border: 1px solid grey;
+	background-color:white;
+	font-weight:bold;
+	font-size: 70px;
+	padding:10px 0;
+	margin: 30px auto;
+	margin-bottom: 20px 
+}
+#daegi{
+	font-size: 15px;
+	text-decoration: underline;
+}
+#resultSection{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: right;
+	padding: 10px;
+}
+#totalSection{
+	float:right;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: right;
+	padding: 0 10px 2px 10px;
+}
+#pointSection{
+	float:right;
+	font-size: 14px;
+	color:lightgray;
+	text-align: right;
+}
+#itemSection{
+	margin: 0 auto;
+	margin-top:10px;
+	height: 250px;
+	width:80%;
+	background-color:white;
+	overflow: scroll;
+	overflow-x: hidden;
+	border: 1px solid grey;
+}
+#itemSection::-webkit-scrollbar {
+   width:9px;
+}
+#itemSection::-webkit-scrollbar-track {
+    background-color: white;
+    opacity : 0.5;
+}
+#itemSection::-webkit-scrollbar-thumb {
+    background-color: #265B3D;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+}
+.item {
+	margin: 1%;
+	width: 97%;
+	height: 30px;
+	padding: 5px 0 1px 0;
+	font-size: 18px;
+	border:1px solid grey;
+	text-align:center;
+}
+
+.itemName {
+	width:50%;
+	white-space: nowrap;
+	overflow: hidden;   
+	text-overflow: ellipsis;
+	float: left;
+}
+.itemPrice {
+	width:35%;
+	white-space: nowrap;
+	overflow: hidden;   
+	text-overflow: ellipsis;
+	float:left;
+}
+.itemCnt {
+	width:15%;
+	white-space: nowrap;
+	overflow: hidden;   
+	text-overflow: ellipsis;
+	float:left;
+}
+.maingo{
+	font-weight: bold;
+	margin: auto;
+	cursor: pointer;
+	text-decoration: none;
+	color:#265B3D;
+	border: 1.5px solid #265B3D;
+	padding: 7px 50px;
+	border-radius: 5px;
+	background-color: white;
+	transition: 0.5s;
+}
+.maingo:hover{
+	background-color: #265B3D;
+	color: white;
+}

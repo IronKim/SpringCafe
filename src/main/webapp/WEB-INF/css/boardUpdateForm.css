@@ -1,0 +1,92 @@
+@charset "UTF-8";
+#boardUpdateForm table{
+	border-collapse: collapse;
+	border: lightgray;
+	padding: 10px;
+	margin: auto; 
+	margin-top: 50px;
+	margin-bottom: 100px;
+	width:940px;
+	height: 400px;
+}
+th,td{
+	padding: 5px;
+}
+#boardUpdateForm {
+	width:940px;
+	margin: auto; 
+}
+h3{
+	color: #265B3D;
+	margin-top: 100px;
+	font-size: 30px;
+}
+#a{
+	background-color: whitesmoke;
+ }
+ #subject {
+	  border: none; /* 기본 테두리 제거 */
+	  outline: none;
+	  font-size: 18px;
+	  padding: 10px 15px;
+}
+
+#subject:focus {
+  /*border-bottom: 2px solid #ccc; /* 포커스 시 밑줄 스타일 변경 */
+  font-weight: bolder;
+
+}
+#content{
+	resize: none;
+	    border: none; /* 기본 테두리 제거 */
+  outline: none;
+  font-size: 15px;
+   padding: 10px 15px;
+}
+#content:focus {
+  /*border-bottom: 2px solid #ccc; /* 포커스 시 밑줄 스타일 변경 */
+  font-weight: bolder;
+
+}
+.btn {
+	float:right;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	color:#265B3D;
+	border: 1.5px solid #265B3D;
+	padding: 7px 30px;
+	border-radius: 5px;
+	background-color: white;
+	transition: 0.5s;
+	z-index: 100;
+	margin: 20px 8px;
+}
+.btn:hover{
+	background-color: #265B3D;
+	color: white;
+}
+#subject {
+    border: none; /* 기본 테두리 제거 */
+    outline: none;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+#subject:focus {
+  /*border-bottom: 2px solid #ccc; /* 포커스 시 밑줄 스타일 변경 */
+	font-weight: bolder;
+
+}
+#content{
+	resize: none;
+	border: none; /* 기본 테두리 제거 */
+	outline: none;
+	font-size: 15px;
+	padding: 10px 15px;
+}
+#content:focus {
+  /*border-bottom: 2px solid #ccc; /* 포커스 시 밑줄 스타일 변경 */
+	font-weight: bolder;
+
+}

@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+	background-color: black;
+	color: white;
+}
+td{
+	white-space: nowrap;
+	overflow: hidden;   
+	text-overflow: ellipsis;
+}
+.m100{max-width: 100px}
+.m130{max-width: 130px}
+.m150{max-width: 150px}
+.m200{max-width: 200px}
+main {
+	text-align: center;
+}
+/* 멤버 css */
+.allTable {
+	border-color: gray;
+	width: 400px;
+	border-collapse: collapse;
+}
+#memberListScroll {
+	width: 417px;
+	height: 400px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+#memberSection {
+	display: inline-block;
+	width:420px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: left;
+}
+.point {
+	padding:0 2px;
+	float:right;
+}
+#info {
+	position: absolute;
+	background: #4b4b4b;
+	padding: 5px;
+	z-index: 100;
+}
+/* 메뉴 css */
+#menuSection {
+	display: inline-block;
+	width:420px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: left;
+}
+#imgThumb {
+	height:80px;
+	width:80px;
+	object-fit:contain;
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+#menuListScroll {
+	width: 417px;
+	height: 200px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+#infoImg {
+	height:80px;
+	width:80px;
+	object-fit:contain;
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+/* 매장 css */
+#storeSection {
+	display: inline-block;
+	width:420px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: left;
+}
+#storeListScroll {
+	width: 417px;
+	height: 300px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+/* 주문내역 css */
+#paySection {
+	display: inline-block;
+	width:420px;
+	border: 1px solid gray;
+	margin-top: 10px;
+	vertical-align: top;
+	text-align: left;
+}
+#payListScroll {
+	width: 417px;
+	height: 400px;
+	overflow: scroll;
+	overflow-x: hidden; 
+}
+.payInfo {
+	background: #4b4b4b;
+}
+.payDiv, .idDiv, .nameDiv, .regionDiv {
+	cursor: default;;
+}
